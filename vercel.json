@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": {
+          "engine": "18.x"
+        }
+      }
+    ],
+    "buildCommand": "npm run build",
+    "devCommand": "npm run dev",
+    "installCommand": "pnpm install",
+    "framework": "remix",
+    "regions": ["all"],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
